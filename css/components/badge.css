@@ -1,0 +1,12 @@
+.badge {
+  display: flex;
+  background-color: orange;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  color: mintcream;
+  font-weight: 550;
+}
