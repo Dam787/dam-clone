@@ -1,6 +1,7 @@
 :root {
-  --main-color: rgb(132, 43, 235);
+  --main-color: rgb(133, 102, 218);
   --horizontal-space: 25px;
   --main-border: 1.5px solid rgba(0, 0, 0, 0.1);
-  --font-grey: rgba(0, 0, 0, 0.3);
+  --font-grey: rgb(177, 180, 184, 0.5);
+  --all-trans: color 1 ease-in-out;
 }

@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px;
-  margin-bottom: 15px;
+  padding: 25px 25px 5px 25px;
+  margin-bottom: 10px;
 }
 .alt-header__title {
   font-size: 32px;
@@ -11,6 +11,7 @@
 }
 .alt-header__column {
   width: 33%;
+  transition: var(--all-trans);
 }
 .alt-header__column:first-child {
   margin-right: auto;
@@ -25,4 +26,9 @@
 }
 .alt-header__column .fa-bars {
   margin-left: 25px;
+}
+
+.alt-header__column i:hover,
+.alt-header__title:hover {
+  color: crimson;
 }

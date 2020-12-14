@@ -1,17 +1,16 @@
 #friends-display-link {
   text-align: center;
   display: block;
-  background-color: rgb(250, 249, 249);
+
   padding: 20px 0px;
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 12px;
+
   margin-top: -15px;
   transition: all 0.5s ease-in-out;
 }
 
 #friends-display-link i {
-  color: rgba(0, 0, 0, 0.2);
   margin-left: 15px;
 }
 
@@ -27,38 +26,86 @@
 .friends-screen__channel-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
-  color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  transition: var(--all-trans);
   font-weight: 600;
   font-size: 18px;
 }
 
-@keyframes hidesplash-screen {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-#splash-screen {
-  background-color: var(--main-color);
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 160px;
-  animation: hidesplash-screen 0.4s ease-in-out forwards;
-  animation-delay: 0.5s;
-}
-
 #friends-display-link:hover {
-  background-color: lightcoral;
-  color: white;
+  background-color: rgba(177, 180, 184, 0.8);
+  color: midnightblue;
+}
+.friends-screen__channel-header span:hover,
+.friends-screen__channel-header i:hover {
+  color: crimson;
+}
+
+@keyframes starbanjjak {
+  0% {
+    color: white;
+    transform: none;
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(2);
+    color: darkgreen;
+    opacity: 0.8;
+  }
+  100% {
+    color: white;
+    transform: none;
+    opacity: 0.5;
+  }
+}
+
+.banjjak {
+  animation: starbanjjak 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  will-change: transform;
+}
+.banjjak-box {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 35px;
+  position: relative;
+  top: -20px;
+}
+
+.banjjak-box2 {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: -15px;
+}
+@keyframes starbanjjakR {
+  0% {
+    transform: scale(2);
+    color: rgb(219, 145, 7);
+    opacity: 0.8;
+  }
+
+  50% {
+    color: white;
+    transform: none;
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    color: rgb(219, 145, 7);
+    opacity: 0.8;
+  }
+}
+
+.banjjak2 {
+  animation: starbanjjakR 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  will-change: transform;
+}
+.box3 {
+  position: relative;
+  left: 30px;
+  top: 230px;
+}
+.banjjak-spacer {
+  height: 300px;
 }

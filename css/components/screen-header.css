@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 25px 25px 25px;
+  padding: 40px 25px 10px 25px;
   margin-bottom: 15px;
+  transition: var(--all-trans);
 }
 
 .screen-header__title {
   font-size: 40px;
-  font-weight: 1000;
 }
 
 .screen-header__icons span {
@@ -26,4 +26,8 @@
 }
 .screen-header__icons .fa-cog:hover {
   animation: rotatecog 2s linear infinite;
+}
+.screen-header__title:hover,
+.screen-header__icons i:hover {
+  color: crimson;
 }

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  transition: var(--all-trans);
 
   width: 100%;
 }
@@ -28,4 +29,8 @@
 
 .status-bar__column .fa-bolt {
   margin: 0px 5px;
+}
+
+.status-bar__column:hover {
+  color: crimson;
 }

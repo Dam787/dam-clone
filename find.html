@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find - Kokoa Clone</title>
@@ -32,7 +36,9 @@
         </span>
       </div>
     </header>
-
+    <span class="banjjak-box">
+      <i class="fas fa-star banjjak"></i>
+    </span>
     <main class="main-screen">
       <div class="row-icons">
         <div class="row-icons__icon">
@@ -48,72 +54,54 @@
           <i class="far fa-envelope fa-2x"></i><span>Invite</span>
         </div>
       </div>
+      <span class="banjjak-box2"><i class="fas fa-star banjjak2"></i></span>
       <div class="recommended-friends">
         <h6 class="recommended-friends__title">Recommended Friends</h6>
         <span> You have no recommended friends. </span>
       </div>
+      <span class="banjjak-box"><i class="fas fa-star banjjak"></i></span>
       <div class="open-chat">
         <div class="open-chat__header">
-          <h4>Open Chat</h4>
+          <h4>Kokoa Tv</h4>
           <span
-            >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i
+            >Go to K.Tv Home <i class="fas fa-chevron-right fa-xs"></i
           ></span>
         </div>
       </div>
       <div class="open-post">
         <div class="open-post__column">
-          <h5 class="open-post__title">#BTS</h5>
-          <h6 class="open-post__hash">#bts#army#friends</h6>
-          <div class="open-post__members">
-            <img src="hatsudal.jpeg" />
-            <span class="open-post__members-count">802 members</span>
-            <div class="divider"></div>
-            <span class="open-post__members-status">Active</span>
-          </div>
+          <iframe
+            src="https://tv.kakao.com/embed/player/cliplink/414230312?service=kakao_tv&amp;section=channel&amp;autoplay=1&amp;profile=HIGH&amp;wmode=transparent"
+            allow="autoplay, fullscreen"
+            allowfullscreen=""
+            width="350"
+            height="200"
+          ></iframe>
         </div>
-        <div class="open-post__column">
-          <img src="open-post1.jpeg" />
-          <span><i class="fas fa-heart fa-sm"></i>326</span>
-        </div>
+        <div class="open-post__column"></div>
       </div>
-
-      <div class="open-post">
-        <div class="open-post__column">
-          <h5 class="open-post__title">Bts Gang~</h5>
-          <h6 class="open-post__hash">#bts#army#friends</h6>
-          <div class="open-post__members">
-            <img src="hatsudal.jpeg" />
-            <span class="open-post__members-count">299 members</span>
-            <div class="divider"></div>
-            <span class="open-post__members-status">Active</span>
-          </div>
-        </div>
-        <div class="open-post__column">
-          <img src="open-post1.jpeg" />
-          <span><i class="fas fa-heart fa-sm"></i>215</span>
-        </div>
-      </div>
+      <span class="banjjak-box2"><i class="fas fa-star banjjak2"></i></span>
     </main>
 
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__btn">
+        <li class="nav__btn animate__animated animate__swing">
           <a class="nav__link" href="friends.html"
             ><i class="far fa-smile fa-2x"></i
           ></a>
         </li>
-        <li class="nav__btn">
+        <li class="nav__btn animate__animated animate__swing">
           <a class="nav__link" href="chats.html">
             <span class="nav__notifacation badge"> 1 </span>
             <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
-        <li class="nav__btn">
+        <li class="nav__btn animate__animated animate__swing">
           <a class="nav__link" href="find.html"
-            ><i class="fas fa-search-plus fa-2x"></i
+            ><i class="far fa-star fa-2x chats-star"></i
           ></a>
         </li>
-        <li class="nav__btn">
+        <li class="nav__btn animate__animated animate__swing">
           <a class="nav__link" href="more.html">
             <span class="nav__notifacation2"> . </span>
 
@@ -123,7 +111,12 @@
       </ul>
     </nav>
     <div id="no-mobile">
-      <span> Your screen is too Big ㅠㅠ </span>
+      <pre class="animate__animated animate__shakeX">
+ !!Screen size!! 
+   !!Too Big!!
+
+       <i class="far fa-dizzy"></i>
+                 </pre>
     </div>
 
     <script

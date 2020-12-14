@@ -1,20 +1,21 @@
 .recommended-friends {
-  margin: 25px 0px;
+  margin: 25px 0px 0px 0px;
   border-bottom: var(--main-border);
   border-top: var(--main-border);
   padding-top: 20px;
+  transition: var(--all-trans);
 }
 .recommended-friends__title {
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--font-grey);
   font-weight: 600;
 }
 .recommended-friends span {
   display: block;
   text-align: center;
-  padding: 150px 0px;
+  padding: 80px 0px;
   font-size: 23px;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--font-grey);
   font-weight: 600;
 }
 
@@ -22,12 +23,13 @@
   display: flex;
   justify-content: space-between;
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--font-grey);
   font-weight: 600;
   margin-bottom: 25px;
 }
 .open-chat span {
   opacity: 0.6;
+  transition: var(--all-trans);
 }
 .open-post {
   display: flex;
@@ -37,7 +39,10 @@
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-
+iframe {
+  padding-left: 80px;
+}
+/*
 .open-post__title {
   font-size: 30px;
   font-weight: 600;
@@ -62,7 +67,7 @@
   margin-right: 8px;
 }
 .open-post__members-count {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--font-grey);
   font-size: 20px;
   font-weight: 600;
 }
@@ -119,4 +124,10 @@
 
 .open-post__column:last-child:hover i {
   animation: heartbeat 1s linear infinite;
+}
+*/
+.recommended-friends__title:hover,
+.open-chat__header h4:hover,
+.open-chat__header span:hover {
+  color: crimson;
 }

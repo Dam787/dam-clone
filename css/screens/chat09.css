@@ -1,5 +1,5 @@
 #chat09-screen {
-  background-color: #abc1d1;
+  background-color: rgba(133, 102, 218, 0.993);
   height: 500vh;
 }
 #chat09-screen .alt-header,
@@ -8,7 +8,7 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  background-color: #abc1d1;
+  background-color: rgb(133, 102, 218);
 }
 #chat09-screen .status-bar {
   z-index: 2;
@@ -39,8 +39,8 @@
 }
 
 .chat__timestamp {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: white;
+  background-color: rgba(25, 25, 112, 0.2);
+
   border-radius: 20px;
   padding: 12px 15px;
   margin-bottom: 30px;
@@ -80,7 +80,7 @@
   align-items: flex-end;
 }
 .message__bubble {
-  background-color: white;
+  background-color: midnightblue;
   padding: 13px 15px;
   border-radius: 18px;
   border-top-left-radius: 0px;
@@ -102,18 +102,18 @@
   flex-direction: row-reverse;
 }
 .message-row__own .message__bubble {
-  background-color: var(--main-color);
+  background-color: rgba(220, 223, 226, 0.8);
   border-top-left-radius: 18px;
   border-top-right-radius: 0px;
   margin-right: 0px;
   margin-left: 8px;
-  color: white;
+  color: midnightblue;
 }
 .reply {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: white;
+
   display: flex;
   justify-content: space-between;
   padding: 5px 20px;
@@ -126,32 +126,30 @@
   width: 100%;
   border: 1.5px solid rgba(0, 0, 0, 0.2);
   border-radius: 25px;
+  padding-left: 8px;
+  opacity: 0.5;
   transition: all 0.3s ease-in-out;
 }
 
 .reply .reply-column:first-child {
-  width: 10%;
+  width: 9%;
 }
 .reply .reply-column:last-child {
-  width: 90%;
+  width: 91%;
   position: relative;
 }
 .reply-column:last-child .fa-smile-wink,
 .reply-column:last-child button {
   position: absolute;
-  right: -2px;
+  right: -4px;
   top: 10px;
 }
 .reply-column:last-child .fa-smile-wink {
   right: 60px;
-  opacity: 0.6;
-}
-.reply .reply-column:first-child .fa-plus-square {
-  opacity: 0.6;
 }
 
 .reply-column:last-child button {
-  background-color: sandybrown;
+  background-color: rgb(133, 102, 218);
   border-radius: 50%;
   border: none;
   width: 45px;

@@ -1,15 +1,17 @@
 .row-icons {
   display: flex;
   justify-content: space-between;
+  height: 140px;
+  transition: var(--all-trans);
 }
 .row-icons__icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   font-size: 20px;
   font-weight: 700;
-  padding: 17px 20px 0px 20px;
+  padding: 5px 20px 0px 20px;
 }
 .row-icons__icon i {
   margin-bottom: 25px;
@@ -18,4 +20,8 @@
 
 .row-icons__icon:hover i {
   transform: rotateZ(30deg);
+}
+
+.row-icons__icon:hover {
+  color: crimson;
 }
