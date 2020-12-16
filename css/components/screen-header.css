@@ -31,3 +31,27 @@
 .screen-header__icons i:hover {
   color: crimson;
 }
+
+@keyframes iconkkam {
+  form {
+    transform: none;
+  }
+  to {
+    transform: scale(0.2) skewX(90deg);
+  }
+}
+.screen-header__icons .fa-search:hover {
+  animation: iconkkam 1s ease-in-out forwards;
+}
+
+@keyframes iconkkam2 {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(0.3) skewY(90deg);
+  }
+}
+.screen-header__icons .fa-music:hover {
+  animation: iconkkam2 1.5s ease-in-out forwards;
+}
